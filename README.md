@@ -4,7 +4,7 @@ This repository contains the AI/ML projects i have worked during my undergrad st
 
 **BEGINNER LEVEL PROJECTS**
 
-1) #***Spam Email Classifier***
+ ***1)Spam Email Classifier***
 
 Goal: Build a classifier to distinguish spam emails from legitimate ones.
 
@@ -29,7 +29,7 @@ Extract features using Bag of Words or TF-IDF.
 Train and test a classifier on the dataset.
 
 
-2) House Price Prediction
+ ***2) House Price Prediction***
 
 Goal: Predict house prices based on features like size, location, and number of rooms.
 
@@ -45,7 +45,7 @@ Learning Outcome:
 Data cleaning and handling missing values.
 Building regression models.
 
-4) Handwritten Digit Recognizer
+ ***4) Handwritten Digit Recognizer***
 
 Goal: Recognize handwritten digits using a neural network.
 
@@ -63,7 +63,7 @@ Implementing a simple feed-forward neural network.
 
 **INTERMEDIATE LEVEL PROJECT**
 
-1) Movie Recommendation System
+ ***1) Movie Recommendation System***
 
 Goal: Build a system to recommend movies based on user preferences.
 
@@ -79,7 +79,7 @@ Learning Outcome:
 Collaborative filtering and matrix factorization.
 Content-based recommendation techniques.
 
-3) Sentiment Analysis of Product Reviews
+ ***3) Sentiment Analysis of Product Reviews***
 
 Goal: Analyze the sentiment of customer reviews on an e-commerce platform.
 
@@ -95,7 +95,7 @@ Learning Outcome:
 Text sentiment classification.
 Fine-tuning transformers for text classification.
 
-3) Autonomous Car Lane Detection
+ ***4) Autonomous Car Lane Detection***
 
 Goal: Detect lanes in images or videos captured from a car.
 
@@ -114,7 +114,7 @@ Using algorithms like Hough Transform for line detection.
 
 **ADVANCED LEVEL PROJECTS **
 
-1) AI Chatbot with GPT
+ ***1) AI Chatbot with GPT***
 
 Goal: Build a custom chatbot using pre-trained GPT models.
 
@@ -129,7 +129,7 @@ Learning Outcome:
 Deploying large language models.
 Understanding transformers and fine-tuning for specific tasks.
 
-2) Image Captioning Model
+ ***2) Image Captioning Model***
 
 Goal: Generate captions for images using CNN-LSTM models.
 
@@ -144,7 +144,7 @@ Learning Outcome:
 Combining computer vision with natural language processing.
 Using sequence models and feature extraction.
 
-3) AI-Powered Stock Price Prediction
+ ***3) AI-Powered Stock Price Prediction***
 
 Goal: Predict stock trends using LSTM or Transformer models.
 
