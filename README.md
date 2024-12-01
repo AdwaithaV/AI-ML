@@ -4,7 +4,7 @@ This repository contains the AI/ML projects i have worked during my undergrad st
 
 **BEGINNER LEVEL PROJECTS**
 
-1) Spam Email Classifier
+1) #***Spam Email Classifier***#
 
 Goal: Build a classifier to distinguish spam emails from legitimate ones.
 
