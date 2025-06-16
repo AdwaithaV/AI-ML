@@ -64,5 +64,5 @@ This project allows users to detect colors in images or real-time webcam streams
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/color-detection-opencv.git
-   cd color-detection-opencv
+     https://github.com/AdwaithaV/AI-ML.git
+   ```
