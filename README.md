@@ -1,160 +1,68 @@
-# AI-ML
-This repository contains the AI/ML projects i have worked during my undergrad studies 
+# 🎨 Color Detection Using OpenCV
 
+This project allows users to detect colors in images or real-time webcam streams by clicking on a region of interest. On clicking a point in the image or frame, the application returns the **name** and **RGB values** of the closest matching color from a predefined dataset.
 
-**BEGINNER LEVEL PROJECTS**
+## 🚀 Project Goals
 
- ***1)Spam Email Classifier***
+- Read input from an image or a live webcam stream.
+- Detect mouse click events to select pixels.
+- Extract and convert BGR to RGB values.
+- Match the color to the closest predefined name using a color dataset.
+- Display the detected color name and its RGB values on the image/frame.
 
-Goal: Build a classifier to distinguish spam emails from legitimate ones.
+---
 
+## 🧠 Project Breakdown
 
-Tools: Python, Scikit-learn, Pandas, NLTK
+### ✅ Stage 1: Read and Display an Image
+- Load and show an image using OpenCV’s `cv2.imread()` and `cv2.imshow()`.
 
+### ✅ Stage 2: Detect Mouse Clicks
+- Use `cv2.setMouseCallback()` to detect mouse click events on the displayed image.
 
-Dataset: SpamAssassin or Kaggle datasets.
+### ✅ Stage 3: Extract RGB Values
+- On mouse click, capture BGR values from the clicked pixel.
+- Convert BGR to RGB since OpenCV loads images in BGR format.
 
+### ✅ Stage 4: Match Color to Known Names
+- Use a `colors.csv` file containing color names and RGB values.
+- Use **Sum of Absolute Differences (SAD)** to find the closest match between the clicked RGB and the dataset.
 
-Learning Outcome:
-Text preprocessing techniques (tokenization, stemming, etc.).
+### ✅ Stage 5: Display Color Name and RGB Values
+- Overlay a rectangle and text showing the color name and its RGB values on the image using `cv2.putText()` and `cv2.rectangle()`.
 
-Training basic classifiers (Naive Bayes, Logistic Regression).
+### 🔄 Stage 6 (Optional): Webcam Color Detection
+- Replace image input with a webcam stream using `cv2.VideoCapture()`.
+- Perform similar operations in real-time by continuously detecting the clicked pixel.
 
+---
 
-Steps:
-Clean and preprocess the email data.
+## 🧩 Modules Used
 
-Extract features using Bag of Words or TF-IDF.
+| Module   | Purpose                                  |
+|----------|------------------------------------------|
+| OpenCV (`cv2`) | Image processing, mouse interaction, webcam access |
+| Pandas   | Reading and processing the `colors.csv` file |
 
-Train and test a classifier on the dataset.
+---
 
+## 📁 Dataset Used
 
- ***2) House Price Prediction***
+**File**: `colors.csv`  
+**Description**: Contains a list of color names and corresponding RGB values.
 
-Goal: Predict house prices based on features like size, location, and number of rooms.
+**Columns**:
+- `color_name`
+- `R`
+- `G`
+- `B`
+- *(optional fields like hex code or index can be ignored if unused)*
 
+---
 
-Tools: Python, Scikit-learn, Matplotlib.
+## 🖥️ Usage Instructions
 
-
-Dataset: Kaggle House Prices.
-
-
-Learning Outcome:
-
-Data cleaning and handling missing values.
-Building regression models.
-
- ***4) Handwritten Digit Recognizer***
-
-Goal: Recognize handwritten digits using a neural network.
-
-
-Tools: Python, TensorFlow/Keras.
-
-
-Dataset: MNIST Dataset (available in TensorFlow/Keras).
-
-
-Learning Outcome:
-
-Understanding neural networks and backpropagation.
-Implementing a simple feed-forward neural network.
-
-**INTERMEDIATE LEVEL PROJECT**
-
- ***1) Movie Recommendation System***
-
-Goal: Build a system to recommend movies based on user preferences.
-
-
-Tools: Python, Scikit-learn, Surprise library.
-
-
-Dataset: MovieLens dataset.
-
-
-Learning Outcome:
-
-Collaborative filtering and matrix factorization.
-Content-based recommendation techniques.
-
- ***3) Sentiment Analysis of Product Reviews***
-
-Goal: Analyze the sentiment of customer reviews on an e-commerce platform.
-
-
-Tools: Python, Scikit-learn, NLTK, or Hugging Face Transformers for advanced approaches.
-
-
-Dataset: Amazon product reviews dataset.
-
-
-Learning Outcome:
-
-Text sentiment classification.
-Fine-tuning transformers for text classification.
-
- ***4) Autonomous Car Lane Detection***
-
-Goal: Detect lanes in images or videos captured from a car.
-
-
-Tools: OpenCV, Python, Matplotlib.
-
-
-Dataset: Self-collected or Tusimple Lane Detection dataset.
-
-
-Learning Outcome:
-
-Edge detection, image preprocessing.
-Using algorithms like Hough Transform for line detection.
-
-
-**ADVANCED LEVEL PROJECTS **
-
- ***1) AI Chatbot with GPT***
-
-Goal: Build a custom chatbot using pre-trained GPT models.
-
-
-Tools: Hugging Face Transformers, OpenAI API.
-
-
-Dataset: Fine-tune GPT with domain-specific data or use pre-trained models.
-
-
-Learning Outcome:
-Deploying large language models.
-Understanding transformers and fine-tuning for specific tasks.
-
- ***2) Image Captioning Model***
-
-Goal: Generate captions for images using CNN-LSTM models.
-
-
-Tools: TensorFlow/Keras, Python.
-
-
-Dataset: MS COCO dataset.
-
-
-Learning Outcome:
-Combining computer vision with natural language processing.
-Using sequence models and feature extraction.
-
- ***3) AI-Powered Stock Price Prediction***
-
-Goal: Predict stock trends using LSTM or Transformer models.
-
-
-Tools: Python, TensorFlow/Keras, Yahoo Finance API.
-
-
-Dataset: Historical stock prices (via API or Kaggle datasets).
-
-
-Learning Outcome:
-Time-series analysis.
-Building and training advanced recurrent models.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/color-detection-opencv.git
+   cd color-detection-opencv
